@@ -10,6 +10,7 @@ on:
       - .github/workflows/sync-readme.yml
       - RESEARCH-SNAPSHOTS.md
       - public/images/actual-graph.png
+      - public/images/readme-research.svg
       - public/images/rayaboy-site.webp
 
 permissions:
@@ -41,6 +42,7 @@ jobs:
           sparse-checkout: |
             /RESEARCH-SNAPSHOTS.md
             /public/images/actual-graph.png
+            /public/images/readme-research.svg
             /public/images/rayaboy-site.webp
 
       - name: Keep shared images and measurement notes current
@@ -53,6 +55,7 @@ jobs:
           synced_files=(
             RESEARCH-SNAPSHOTS.md
             public/images/actual-graph.png
+            public/images/readme-research.svg
             public/images/rayaboy-site.webp
           )
 
