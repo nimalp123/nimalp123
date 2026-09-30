@@ -1,0 +1,93 @@
+name: Sync portfolio README
+
+on:
+  schedule:
+    - cron: '2-57/5 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/sync-readme.yml
+      - README.md
+      - RESEARCH-SNAPSHOTS.md
+      - public/images/social-card.png
+      - public/images/actual-graph.png
+      - public/images/readme-research.svg
+      - public/images/rayaboy-site.webp
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-readme-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.repository == 'nimalp123/nimalp123'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out the profile repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: main
+
+      - name: Read the public portfolio
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          repository: nimalp123/nimal-site
+          ref: main
+          path: .portfolio-source
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /README.md
+            /RESEARCH-SNAPSHOTS.md
+            /public/images/social-card.png
+            /public/images/actual-graph.png
+            /public/images/readme-research.svg
+            /public/images/rayaboy-site.webp
+
+      - name: Copy and publish the matching README
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # Only these already-public presentation files can enter the profile.
+          synced_files=(
+            README.md
+            RESEARCH-SNAPSHOTS.md
+            public/images/social-card.png
+            public/images/actual-graph.png
+            public/images/readme-research.svg
+            public/images/rayaboy-site.webp
+          )
+
+          for portfolio_file in "${synced_files[@]}"; do
+            mkdir -p -- "$(dirname "$portfolio_file")"
+            cp -- ".portfolio-source/$portfolio_file" "$portfolio_file"
+            cmp -- ".portfolio-source/$portfolio_file" "$portfolio_file"
+          done
+
+          source_commit=$(git -C .portfolio-source rev-parse HEAD)
+          git add -- "${synced_files[@]}"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          if git diff --cached --quiet; then
+            # Keep the public schedule active through long breaks between edits.
+            # GitHub disables scheduled workflows after 60 days without activity.
+            latest_commit_time=$(git log -1 --format=%ct)
+            current_time=$(date +%s)
+            if (( current_time - latest_commit_time < 2592000 )); then
+              printf 'README and supporting files already match `%s`.\n' "$source_commit" >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+            git commit --allow-empty -m 'Keep profile README sync active'
+          else
+            git commit -m 'Sync portfolio README from nimal-site' -m "Public source: nimalp123/nimal-site@$source_commit"
+          fi
+
+          git push origin HEAD:main
+          printf 'Published README and supporting files from `%s`.\n' "$source_commit" >> "$GITHUB_STEP_SUMMARY"
