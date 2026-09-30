@@ -1,4 +1,4 @@
-name: Sync portfolio README
+name: Sync portfolio assets
 
 on:
   schedule:
@@ -8,11 +8,8 @@ on:
     branches: [main]
     paths:
       - .github/workflows/sync-readme.yml
-      - README.md
       - RESEARCH-SNAPSHOTS.md
-      - public/images/social-card.png
       - public/images/actual-graph.png
-      - public/images/readme-research.svg
       - public/images/rayaboy-site.webp
 
 permissions:
@@ -42,25 +39,20 @@ jobs:
           persist-credentials: false
           sparse-checkout-cone-mode: false
           sparse-checkout: |
-            /README.md
             /RESEARCH-SNAPSHOTS.md
-            /public/images/social-card.png
             /public/images/actual-graph.png
-            /public/images/readme-research.svg
             /public/images/rayaboy-site.webp
 
-      - name: Copy and publish the matching README
+      - name: Keep shared images and measurement notes current
         shell: bash
         run: |
           set -euo pipefail
 
-          # Only these already-public presentation files can enter the profile.
+          # The profile README and banner are tailored here, independently of
+          # the website README. Only these already-public shared files sync.
           synced_files=(
-            README.md
             RESEARCH-SNAPSHOTS.md
-            public/images/social-card.png
             public/images/actual-graph.png
-            public/images/readme-research.svg
             public/images/rayaboy-site.webp
           )
 
@@ -81,13 +73,13 @@ jobs:
             latest_commit_time=$(git log -1 --format=%ct)
             current_time=$(date +%s)
             if (( current_time - latest_commit_time < 2592000 )); then
-              printf 'README and supporting files already match `%s`.\n' "$source_commit" >> "$GITHUB_STEP_SUMMARY"
+              printf 'Shared assets match `%s`. The profile README is preserved.\n' "$source_commit" >> "$GITHUB_STEP_SUMMARY"
               exit 0
             fi
-            git commit --allow-empty -m 'Keep profile README sync active'
+            git commit --allow-empty -m 'Keep profile asset sync active'
           else
-            git commit -m 'Sync portfolio README from nimal-site' -m "Public source: nimalp123/nimal-site@$source_commit"
+            git commit -m 'Sync public portfolio assets' -m "Public source: nimalp123/nimal-site@$source_commit"
           fi
 
           git push origin HEAD:main
-          printf 'Published README and supporting files from `%s`.\n' "$source_commit" >> "$GITHUB_STEP_SUMMARY"
+          printf 'Synced shared assets from `%s`. The profile README is preserved.\n' "$source_commit" >> "$GITHUB_STEP_SUMMARY"
