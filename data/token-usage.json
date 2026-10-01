@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T07:45:29.979Z",
+  "generatedAt": "2026-10-01T08:45:38.263Z",
   "timezone": "America/Los_Angeles",
   "source": {
     "tool": "ccusage",
@@ -16,12 +16,12 @@
     "totalTokens": 331306029
   },
   "totals": {
-    "inputTokens": 333624670,
-    "outputTokens": 45364358,
+    "inputTokens": 335709485,
+    "outputTokens": 45593648,
     "cacheCreationTokens": 302124735,
-    "cacheReadTokens": 28540867947,
-    "totalTokens": 29226361291,
-    "totalCost": 13337.81035422901
+    "cacheReadTokens": 28580158059,
+    "totalTokens": 29267974758,
+    "totalCost": 13347.850174029012
   },
   "agents": [
     {
@@ -56,12 +56,12 @@
     },
     {
       "id": "codex",
-      "inputTokens": 154197514,
-      "outputTokens": 19602500,
+      "inputTokens": 156137844,
+      "outputTokens": 19808262,
       "cacheCreationTokens": 0,
-      "cacheReadTokens": 4170766208,
-      "totalTokens": 4344566222,
-      "totalCost": 3996.73820708,
+      "cacheReadTokens": 4207339392,
+      "totalTokens": 4383285498,
+      "totalCost": 4006.3338054799997,
       "models": [
         "gpt-5.3-codex-spark",
         "gpt-5.4",
@@ -87,12 +87,12 @@
     },
     {
       "id": "hermes",
-      "inputTokens": 15420410,
-      "outputTokens": 548884,
+      "inputTokens": 15564895,
+      "outputTokens": 572412,
       "cacheCreationTokens": 0,
-      "cacheReadTokens": 191603584,
-      "totalTokens": 207754250,
-      "totalCost": 449.4641214,
+      "cacheReadTokens": 194320512,
+      "totalTokens": 210648441,
+      "totalCost": 449.9083428,
       "models": [
         "gpt-5.5",
         "gpt-5.6-sol",
@@ -2948,12 +2948,12 @@
     },
     {
       "date": "2026-09-30",
-      "inputTokens": 32368202,
-      "outputTokens": 4992862,
+      "inputTokens": 32512687,
+      "outputTokens": 5016390,
       "cacheCreationTokens": 33324098,
-      "cacheReadTokens": 3604936936,
-      "totalTokens": 3675641197,
-      "totalCost": 957.3080963200015,
+      "cacheReadTokens": 3607653864,
+      "totalTokens": 3678535388,
+      "totalCost": 957.7523177200015,
       "agents": [
         {
           "id": "claude",
@@ -2982,12 +2982,12 @@
         },
         {
           "id": "hermes",
-          "inputTokens": 466416,
-          "outputTokens": 65257,
+          "inputTokens": 610901,
+          "outputTokens": 88785,
           "cacheCreationTokens": 0,
-          "cacheReadTokens": 8676480,
-          "totalTokens": 9227252,
-          "totalCost": 1.32202,
+          "cacheReadTokens": 11393408,
+          "totalTokens": 12121443,
+          "totalCost": 1.7662414,
           "models": [
             "gpt-6.1-sol"
           ]
@@ -2996,12 +2996,12 @@
     },
     {
       "date": "2026-10-01",
-      "inputTokens": 1060775,
-      "outputTokens": 140908,
+      "inputTokens": 3001105,
+      "outputTokens": 346670,
       "cacheCreationTokens": 953731,
-      "cacheReadTokens": 28751775,
-      "totalTokens": 30907189,
-      "totalCost": 14.9813112,
+      "cacheReadTokens": 65324959,
+      "totalTokens": 69626465,
+      "totalCost": 24.5769096,
       "agents": [
         {
           "id": "claude",
@@ -3017,12 +3017,12 @@
         },
         {
           "id": "codex",
-          "inputTokens": 1060751,
-          "outputTokens": 130774,
+          "inputTokens": 3001081,
+          "outputTokens": 336536,
           "cacheCreationTokens": 0,
-          "cacheReadTokens": 19785088,
-          "totalTokens": 20976613,
-          "totalCost": 5.4077508000000005,
+          "cacheReadTokens": 56358272,
+          "totalTokens": 59695889,
+          "totalCost": 15.003349200000002,
           "models": [
             "gpt-6.1-sol"
           ]
