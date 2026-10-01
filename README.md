@@ -2,9 +2,9 @@
   <img src="public/images/profile-banner.svg" alt="Nimal Periasamy — applied AI and research engineering. Build. Measure. Iterate. Ship." width="1200" />
 </a>
 
-**[Website ↗](https://nimalp123.com/)** · **[LinkedIn ↗](https://www.linkedin.com/in/nimal-periasamy/)** · **[Rayaboy ↗](https://rayaboy.com)**
+**[Website ↗](https://nimalp123.com/)** · **[LinkedIn ↗](https://www.linkedin.com/in/nimal-periasamy/)** · **[Rayaboy ↗](https://rayaboy.com)** · **[PPAD ↗](https://ppad.fun)**
 
-I'm Nimal. I build applied AI products, research systems, and experiments that turn into useful things.
+I'm Nimal. I build applied AI products, research systems, protocols, and experiments that turn into useful things.
 
 ### Building at Rayaboy
 
@@ -68,6 +68,37 @@ I'm Nimal. I build applied AI products, research systems, and experiments that t
 [![Rayaboy's homepage and SuperProfile preview. Click to visit rayaboy.com.](public/images/rayaboy-site.webp)](https://rayaboy.com)
 
 **[CLICK THE PREVIEW OR OPEN RAYABOY.COM ↗](https://rayaboy.com)**
+
+### PPAD / Pledge Capital
+
+**From interface to infrastructure. Built with my team.**
+
+A Solana launchpad and fixed-term lending system: Rust / Anchor custody, a typed wallet runtime, verified chain-state APIs, and the product around them.
+
+[![Pledge Capital's chrome pi identity. Click to open ppad.fun.](public/images/ppad-preview.webp)](https://ppad.fun)
+
+**393** release tests passed · **36** compiled-program tests passed · **39** reconciled test-validator transactions.
+
+- **Protocol:** SOL escrow, collateral custody, repayment/default settlement, and exposure cleanup across two token programs.
+- **Client + infrastructure:** canonical transaction checks, uncertain-confirmation recovery, artifact-pinned release verification, and bounded RPC.
+- **Iteration:** adversarial review → targeted regression → compiled-program test → reconciled receipt.
+
+<details>
+<summary><strong>Inside the PPAD build ↗</strong></summary>
+
+| Receipt | Scope |
+| :--- | :--- |
+| **393** release tests | Recorded website/API release build; two intentional legacy-validator skips |
+| **36** compiled-program tests | Exact production-identity lending artifact; lifecycle, adversarial, and bootstrap checks |
+| **39** reconciled transactions | Disposable validator, across SPL Token + Token-2022; includes grace/default settlement |
+| **12** contract instructions | Administration, markets, offers, borrowing, settlement, and exposure cleanup |
+| Release checks | Separate clean build reproduced the artifact hash; deployed code matched the reviewed artifact |
+
+</details>
+
+<sub>October 1, 2026 recorded engineering checkpoints, with separate scopes. Test transactions are not mainnet volume. Internal checks are not an external audit. [Receipt notes ↗](PPAD-RESULTS.md)</sub>
+
+**[EXPLORE PPAD ↗](https://ppad.fun)** · Website + verified read API live. Lending program deployed on mainnet with new lending paused; public lending activation and token creation pending.
 
 ### The public experiment
 

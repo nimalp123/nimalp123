@@ -9,6 +9,8 @@ on:
     paths:
       - .github/workflows/sync-readme.yml
       - RESEARCH-SNAPSHOTS.md
+      - PPAD-RESULTS.md
+      - public/images/ppad-preview.webp
       - public/images/actual-graph.png
       - public/images/readme-research.svg
       - public/images/rayaboy-site.webp
@@ -41,6 +43,8 @@ jobs:
           sparse-checkout-cone-mode: false
           sparse-checkout: |
             /RESEARCH-SNAPSHOTS.md
+            /PPAD-RESULTS.md
+            /public/images/ppad-preview.webp
             /public/images/actual-graph.png
             /public/images/readme-research.svg
             /public/images/rayaboy-site.webp
@@ -54,6 +58,8 @@ jobs:
           # the website README. Only these already-public shared files sync.
           synced_files=(
             RESEARCH-SNAPSHOTS.md
+            PPAD-RESULTS.md
+            public/images/ppad-preview.webp
             public/images/actual-graph.png
             public/images/readme-research.svg
             public/images/rayaboy-site.webp
