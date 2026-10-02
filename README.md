@@ -73,32 +73,39 @@ I'm Nimal. I build applied AI products, research systems, protocols, and experim
 
 **From interface to infrastructure. Built with my team.**
 
-A Solana launchpad and fixed-term lending system: Rust / Anchor custody, a typed wallet runtime, verified chain-state APIs, and the product around them.
+Token launches. Creator fee sharing. Collateral-backed lending on Solana. Rust / Anchor, TypeScript, and the product around them.
 
 [![Pledge Capital's chrome pi identity. Click to open ppad.fun.](public/images/ppad-preview.webp)](https://ppad.fun)
 
-**393** release tests passed · **36** compiled-program tests passed · **39** reconciled test-validator transactions.
+**393** recorded release tests · **36** compiled-program tests · **39** reconciled test transactions.
 
-- **Protocol:** SOL escrow, collateral custody, repayment/default settlement, and exposure cleanup across two token programs.
-- **Client + infrastructure:** canonical transaction checks, uncertain-confirmation recovery, artifact-pinned release verification, and bounded RPC.
-- **Iteration:** adversarial review → targeted regression → compiled-program test → reconciled receipt.
+<sub>Previously published checkpoints, with separate test scopes. Validator transactions are test activity. [Receipt notes ↗](PPAD-RESULTS.md)</sub>
+
+- **Launch pipeline:** artwork → wallet approval → token creation → optional first buy. Creator-selected, immutable fee splits.
+- **On-chain financing:** funded SOL offers, fixed repayment terms, and token collateral.
+- **Inspectable product:** exact transaction reviews, public market APIs, and linked treasury receipts.
+
+**On-chain / fees received:** **23.929338253 SOL** creator fees · **0.04 SOL** launch fees · **24** finalized fee transactions.
+
+<sub>October 1 treasury inflows from the [public finalized fee ledger ↗](https://ppad.fun/api/launch/fees).</sub>
 
 <details>
 <summary><strong>Inside the PPAD build ↗</strong></summary>
 
-| Receipt | Scope |
+| Layer | What we built |
 | :--- | :--- |
-| **393** release tests | Recorded website/API release build; two intentional legacy-validator skips |
-| **36** compiled-program tests | Exact production-identity lending artifact; lifecycle, adversarial, and bootstrap checks |
-| **39** reconciled transactions | Disposable validator, across SPL Token + Token-2022; includes grace/default settlement |
-| **12** contract instructions | Administration, markets, offers, borrowing, settlement, and exposure cleanup |
-| Release checks | Separate clean build reproduced the artifact hash; deployed code matched the reviewed artifact |
+| Launch workspace | Artwork, metadata, optional first buy, disclosed costs, and wallet review |
+| Creator fee sharing | Creator-selected percentages, immutable recipients, and direct Pump payouts |
+| Lending | Fund an offer → pledge tokens → repay or settle on fixed terms |
+| Wallet review | Verify accounts, terms, fees and expiry; reconcile uncertain signatures before another transaction |
+| Public APIs | Release status, admitted mints, markets, funded offers, loans and treasury snapshots |
+| Treasury | Creator and launch fees separated, exact SOL amounts, and linked transactions |
+| Product | Launches, Lending and My vault |
+| Published engineering | Rust / Anchor + TypeScript, compiled-program checks, reconciled validator runs |
 
 </details>
 
-<sub>October 1, 2026 recorded engineering checkpoints, with separate scopes. Test transactions are not mainnet volume. Internal checks are not an external audit. [Receipt notes ↗](PPAD-RESULTS.md)</sub>
-
-**[EXPLORE PPAD ↗](https://ppad.fun)** · Website + verified read API live. Lending program deployed on mainnet with new lending paused; public lending activation and token creation pending.
+**[EXPLORE PPAD ↗](https://ppad.fun)** · **[Official $PPAD token ↗](https://solscan.io/token/2Pj812u3RsfRT3mirFNNdGXZBMSFFnMjw6EjF7iwc1Ev)**
 
 ### The public experiment
 
