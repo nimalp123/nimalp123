@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T01:00:27.202Z",
+  "generatedAt": "2026-10-06T02:00:36.592Z",
   "timezone": "America/Los_Angeles",
   "source": {
     "tool": "ccusage",
@@ -16,12 +16,12 @@
     "totalTokens": 331306029
   },
   "totals": {
-    "inputTokens": 448595467,
-    "outputTokens": 63689975,
+    "inputTokens": 452044267,
+    "outputTokens": 64305400,
     "cacheCreationTokens": 456372558,
-    "cacheReadTokens": 38503023975,
-    "totalTokens": 39476073576,
-    "totalCost": 16342.38176442902
+    "cacheReadTokens": 38609417831,
+    "totalTokens": 39586531657,
+    "totalCost": 16365.902185269018
   },
   "agents": [
     {
@@ -56,12 +56,12 @@
     },
     {
       "id": "codex",
-      "inputTokens": 268708907,
-      "outputTokens": 34207128,
+      "inputTokens": 272157707,
+      "outputTokens": 34822553,
       "cacheCreationTokens": 0,
-      "cacheReadTokens": 6508725632,
-      "totalTokens": 6811641667,
-      "totalCost": 4600.7637768800005,
+      "cacheReadTokens": 6615119488,
+      "totalTokens": 6922099748,
+      "totalCost": 4624.2841977200005,
       "models": [
         "gpt-5.3-codex-spark",
         "gpt-5.4",
@@ -3115,12 +3115,12 @@
     },
     {
       "date": "2026-10-05",
-      "inputTokens": 23141008,
-      "outputTokens": 4984157,
+      "inputTokens": 26589808,
+      "outputTokens": 5599582,
       "cacheCreationTokens": 91055454,
-      "cacheReadTokens": 5403168863,
-      "totalTokens": 5522349482,
-      "totalCost": 1593.8418658000096,
+      "cacheReadTokens": 5509562719,
+      "totalTokens": 5632807563,
+      "totalCost": 1617.3622866400096,
       "agents": [
         {
           "id": "claude",
@@ -3136,13 +3136,14 @@
         },
         {
           "id": "codex",
-          "inputTokens": 23103268,
-          "outputTokens": 3384410,
+          "inputTokens": 26552068,
+          "outputTokens": 3999835,
           "cacheCreationTokens": 0,
-          "cacheReadTokens": 591424768,
-          "totalTokens": 617912446,
-          "totalCost": 139.1931128,
+          "cacheReadTokens": 697818624,
+          "totalTokens": 728370527,
+          "totalCost": 162.71353364,
           "models": [
+            "gpt-5.6-luna",
             "gpt-6.1-sol"
           ]
         }
