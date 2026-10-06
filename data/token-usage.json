@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T11:01:52.799Z",
+  "generatedAt": "2026-10-06T12:02:01.033Z",
   "timezone": "America/Los_Angeles",
   "source": {
     "tool": "ccusage",
@@ -16,12 +16,12 @@
     "totalTokens": 331306029
   },
   "totals": {
-    "inputTokens": 492020033,
-    "outputTokens": 70964879,
-    "cacheCreationTokens": 459166892,
-    "cacheReadTokens": 39626383784,
-    "totalTokens": 40652928063,
-    "totalCost": 17461.39668534902
+    "inputTokens": 497125893,
+    "outputTokens": 71714117,
+    "cacheCreationTokens": 458591045,
+    "cacheReadTokens": 39734781613,
+    "totalTokens": 40766605143,
+    "totalCost": 17462.317467649016
   },
   "agents": [
     {
@@ -40,12 +40,12 @@
     },
     {
       "id": "claude",
-      "inputTokens": 333186,
-      "outputTokens": 17704555,
-      "cacheCreationTokens": 458745194,
-      "cacheReadTokens": 26830574536,
-      "totalTokens": 27307357471,
-      "totalCost": 8622.84899405002,
+      "inputTokens": 332892,
+      "outputTokens": 17490465,
+      "cacheCreationTokens": 458169347,
+      "cacheReadTokens": 26801228109,
+      "totalTokens": 27277220813,
+      "totalCost": 8590.149762750021,
       "models": [
         "claude-fable-5-1",
         "claude-opus-4-8",
@@ -56,12 +56,12 @@
     },
     {
       "id": "codex",
-      "inputTokens": 312003023,
-      "outputTokens": 41206517,
+      "inputTokens": 317109177,
+      "outputTokens": 42169845,
       "cacheCreationTokens": 0,
-      "cacheReadTokens": 7580760704,
-      "totalTokens": 7933970244,
-      "totalCost": 5681.6386816,
+      "cacheReadTokens": 7718504960,
+      "totalTokens": 8077783982,
+      "totalCost": 5715.2586952,
       "models": [
         "gpt-5.3-codex-spark",
         "gpt-5.4",
@@ -2174,25 +2174,13 @@
     },
     {
       "date": "2026-09-02",
-      "inputTokens": 2620897,
-      "outputTokens": 453158,
-      "cacheCreationTokens": 655794,
-      "cacheReadTokens": 170856624,
-      "totalTokens": 174741534,
-      "totalCost": 104.9250498199999,
+      "inputTokens": 2620389,
+      "outputTokens": 158217,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 125342464,
+      "totalTokens": 128276131,
+      "totalCost": 68.7925348199999,
       "agents": [
-        {
-          "id": "claude",
-          "inputTokens": 508,
-          "outputTokens": 294941,
-          "cacheCreationTokens": 655794,
-          "cacheReadTokens": 45514160,
-          "totalTokens": 46465403,
-          "totalCost": 36.132515,
-          "models": [
-            "claude-opus-5"
-          ]
-        },
         {
           "id": "opencode",
           "inputTokens": 2620389,
@@ -2212,25 +2200,13 @@
     },
     {
       "date": "2026-09-03",
-      "inputTokens": 14922635,
-      "outputTokens": 346851,
-      "cacheCreationTokens": 518792,
-      "cacheReadTokens": 474756039,
-      "totalTokens": 490725740,
-      "totalCost": 310.0499484800001,
+      "inputTokens": 14922615,
+      "outputTokens": 342434,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 472590336,
+      "totalTokens": 488036808,
+      "totalCost": 303.6686519800001,
       "agents": [
-        {
-          "id": "claude",
-          "inputTokens": 20,
-          "outputTokens": 4417,
-          "cacheCreationTokens": 518792,
-          "cacheReadTokens": 2165703,
-          "totalTokens": 2688932,
-          "totalCost": 6.381296500000001,
-          "models": [
-            "claude-opus-5"
-          ]
-        },
         {
           "id": "opencode",
           "inputTokens": 14922615,
@@ -3151,21 +3127,33 @@
     },
     {
       "date": "2026-10-06",
-      "inputTokens": 10619016,
-      "outputTokens": 2229109,
-      "cacheCreationTokens": 0,
-      "cacheReadTokens": 293173376,
-      "totalTokens": 306021501,
-      "totalCost": 72.84645959999999,
+      "inputTokens": 15725404,
+      "outputTokens": 3277705,
+      "cacheCreationTokens": 598739,
+      "cacheReadTokens": 449251068,
+      "totalTokens": 468852916,
+      "totalCost": 116.28105339999999,
       "agents": [
         {
+          "id": "claude",
+          "inputTokens": 234,
+          "outputTokens": 85268,
+          "cacheCreationTokens": 598739,
+          "cacheReadTokens": 18333436,
+          "totalTokens": 19017677,
+          "totalCost": 9.8145802,
+          "models": [
+            "claude-opus-5-5"
+          ]
+        },
+        {
           "id": "codex",
-          "inputTokens": 10619016,
-          "outputTokens": 2229109,
+          "inputTokens": 15725170,
+          "outputTokens": 3192437,
           "cacheCreationTokens": 0,
-          "cacheReadTokens": 293173376,
-          "totalTokens": 306021501,
-          "totalCost": 72.84645959999999,
+          "cacheReadTokens": 430917632,
+          "totalTokens": 449835239,
+          "totalCost": 106.4664732,
           "models": [
             "gpt-6.1-sol"
           ]
