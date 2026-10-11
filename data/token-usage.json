@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T06:29:03.597Z",
+  "generatedAt": "2026-10-11T09:29:25.036Z",
   "timezone": "America/Los_Angeles",
   "source": {
     "tool": "ccusage",
@@ -9,19 +9,19 @@
   },
   "coverage": {
     "from": "2026-03-18",
-    "through": "2026-10-10"
+    "through": "2026-10-11"
   },
   "pricingGap": {
     "modelCount": 5,
     "totalTokens": 331306029
   },
   "totals": {
-    "inputTokens": 603394464,
-    "outputTokens": 90997333,
+    "inputTokens": 603611790,
+    "outputTokens": 90997589,
     "cacheCreationTokens": 479144815,
     "cacheReadTokens": 44171469690,
-    "totalTokens": 45349401034,
-    "totalCost": 18531.16149036902
+    "totalTokens": 45349618616,
+    "totalCost": 18531.59870236902
   },
   "agents": [
     {
@@ -56,12 +56,12 @@
     },
     {
       "id": "codex",
-      "inputTokens": 422908193,
-      "outputTokens": 60113611,
+      "inputTokens": 423125519,
+      "outputTokens": 60113867,
       "cacheCreationTokens": 0,
       "cacheReadTokens": 11282306048,
-      "totalTokens": 11765327852,
-      "totalCost": 6462.560613119999,
+      "totalTokens": 11765545434,
+      "totalCost": 6462.997825119999,
       "models": [
         "gpt-5.3-codex-spark",
         "gpt-5.4",
@@ -3260,6 +3260,29 @@
           "cacheReadTokens": 278290304,
           "totalTokens": 285949676,
           "totalCost": 52.0745904,
+          "models": [
+            "gpt-6.1-sol"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "inputTokens": 217326,
+      "outputTokens": 256,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 0,
+      "totalTokens": 217582,
+      "totalCost": 0.437212,
+      "agents": [
+        {
+          "id": "codex",
+          "inputTokens": 217326,
+          "outputTokens": 256,
+          "cacheCreationTokens": 0,
+          "cacheReadTokens": 0,
+          "totalTokens": 217582,
+          "totalCost": 0.437212,
           "models": [
             "gpt-6.1-sol"
           ]
