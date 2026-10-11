@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T09:29:25.036Z",
+  "generatedAt": "2026-10-11T10:29:33.387Z",
   "timezone": "America/Los_Angeles",
   "source": {
     "tool": "ccusage",
@@ -16,12 +16,12 @@
     "totalTokens": 331306029
   },
   "totals": {
-    "inputTokens": 603611790,
-    "outputTokens": 90997589,
+    "inputTokens": 604938071,
+    "outputTokens": 91103066,
     "cacheCreationTokens": 479144815,
-    "cacheReadTokens": 44171469690,
-    "totalTokens": 45349618616,
-    "totalCost": 18531.59870236902
+    "cacheReadTokens": 44193262202,
+    "totalTokens": 45372842886,
+    "totalCost": 18537.485285569022
   },
   "agents": [
     {
@@ -56,12 +56,12 @@
     },
     {
       "id": "codex",
-      "inputTokens": 423125519,
-      "outputTokens": 60113867,
+      "inputTokens": 424451800,
+      "outputTokens": 60219344,
       "cacheCreationTokens": 0,
-      "cacheReadTokens": 11282306048,
-      "totalTokens": 11765545434,
-      "totalCost": 6462.997825119999,
+      "cacheReadTokens": 11304098560,
+      "totalTokens": 11788769704,
+      "totalCost": 6468.884408319999,
       "models": [
         "gpt-5.3-codex-spark",
         "gpt-5.4",
@@ -3268,21 +3268,21 @@
     },
     {
       "date": "2026-10-11",
-      "inputTokens": 217326,
-      "outputTokens": 256,
+      "inputTokens": 1543607,
+      "outputTokens": 105733,
       "cacheCreationTokens": 0,
-      "cacheReadTokens": 0,
-      "totalTokens": 217582,
-      "totalCost": 0.437212,
+      "cacheReadTokens": 21792512,
+      "totalTokens": 23441852,
+      "totalCost": 6.3237952,
       "agents": [
         {
           "id": "codex",
-          "inputTokens": 217326,
-          "outputTokens": 256,
+          "inputTokens": 1543607,
+          "outputTokens": 105733,
           "cacheCreationTokens": 0,
-          "cacheReadTokens": 0,
-          "totalTokens": 217582,
-          "totalCost": 0.437212,
+          "cacheReadTokens": 21792512,
+          "totalTokens": 23441852,
+          "totalCost": 6.3237952,
           "models": [
             "gpt-6.1-sol"
           ]
