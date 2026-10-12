@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T01:32:22.939Z",
+  "generatedAt": "2026-10-12T02:32:31.945Z",
   "timezone": "America/Los_Angeles",
   "source": {
     "tool": "ccusage",
@@ -16,12 +16,12 @@
     "totalTokens": 331306029
   },
   "totals": {
-    "inputTokens": 609987223,
-    "outputTokens": 91711878,
-    "cacheCreationTokens": 483025965,
-    "cacheReadTokens": 44586078534,
-    "totalTokens": 45775198332,
-    "totalCost": 17817.848402089025
+    "inputTokens": 609987405,
+    "outputTokens": 91722791,
+    "cacheCreationTokens": 484499997,
+    "cacheReadTokens": 44599895531,
+    "totalTokens": 45790500456,
+    "totalCost": 17828.200949489023
   },
   "agents": [
     {
@@ -40,12 +40,12 @@
     },
     {
       "id": "claude",
-      "inputTokens": 343178,
-      "outputTokens": 18873074,
-      "cacheCreationTokens": 482604267,
-      "cacheReadTokens": 27887452390,
-      "totalTokens": 28389272909,
-      "totalCost": 8972.20958695002,
+      "inputTokens": 343360,
+      "outputTokens": 18883987,
+      "cacheCreationTokens": 484078299,
+      "cacheReadTokens": 27901269387,
+      "totalTokens": 28404575033,
+      "totalCost": 8982.56213435002,
       "models": [
         "claude-fable-5-1",
         "claude-opus-4-8",
@@ -3268,21 +3268,21 @@
     },
     {
       "date": "2026-10-11",
-      "inputTokens": 6592759,
-      "outputTokens": 714545,
-      "cacheCreationTokens": 3881150,
-      "cacheReadTokens": 414608844,
-      "totalTokens": 425797298,
-      "totalCost": 104.1896626,
+      "inputTokens": 6592941,
+      "outputTokens": 725458,
+      "cacheCreationTokens": 5355182,
+      "cacheReadTokens": 428425841,
+      "totalTokens": 441099422,
+      "totalCost": 114.54220999999997,
       "agents": [
         {
           "id": "claude",
-          "inputTokens": 1520,
-          "outputTokens": 47726,
-          "cacheCreationTokens": 3881150,
-          "cacheReadTokens": 215034572,
-          "totalTokens": 218964968,
-          "totalCost": 64.38156740000001,
+          "inputTokens": 1702,
+          "outputTokens": 58639,
+          "cacheCreationTokens": 5355182,
+          "cacheReadTokens": 228851569,
+          "totalTokens": 234267092,
+          "totalCost": 74.73411479999997,
           "models": [
             "claude-opus-5-5"
           ]
