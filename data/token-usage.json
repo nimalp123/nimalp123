@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T04:42:38.837Z",
+  "generatedAt": "2026-10-15T15:45:30.952Z",
   "timezone": "America/Los_Angeles",
   "source": {
     "tool": "ccusage",
@@ -21,7 +21,7 @@
     "cacheCreationTokens": 496010478,
     "cacheReadTokens": 37763384209,
     "totalTokens": 38616881962,
-    "totalCost": 13174.056863569018
+    "totalCost": 13174.15491146902
   },
   "agents": [
     {
@@ -116,7 +116,7 @@
       "cacheCreationTokens": 421698,
       "cacheReadTokens": 4955442989,
       "totalTokens": 5132621424,
-      "totalCost": 2661.955306128999,
+      "totalCost": 2662.053354028999,
       "models": [
         "MiniMax-M3",
         "big-pickle",
@@ -451,7 +451,7 @@
       "cacheCreationTokens": 334563,
       "cacheReadTokens": 5320604,
       "totalTokens": 5983343,
-      "totalCost": 5.2268569000000005,
+      "totalCost": 5.22943538,
       "agents": [
         {
           "id": "claude",
@@ -472,7 +472,7 @@
           "cacheCreationTokens": 0,
           "cacheReadTokens": 2988636,
           "totalTokens": 3153928,
-          "totalCost": 0.008330399999999998,
+          "totalCost": 0.010908880000000001,
           "models": [
             "MiniMax-M3",
             "default_model"
@@ -1419,7 +1419,7 @@
       "cacheCreationTokens": 399100,
       "cacheReadTokens": 349839320,
       "totalTokens": 360359207,
-      "totalCost": 142.10623281999995,
+      "totalCost": 142.20170223999997,
       "agents": [
         {
           "id": "opencode",
@@ -1428,7 +1428,7 @@
           "cacheCreationTokens": 399100,
           "cacheReadTokens": 349839320,
           "totalTokens": 360359207,
-          "totalCost": 142.10623281999995,
+          "totalCost": 142.20170223999997,
           "models": [
             "MiniMax-M3",
             "gpt-5.6-luna-fast",
