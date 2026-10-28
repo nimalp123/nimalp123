@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T08:54:11.938Z",
+  "generatedAt": "2026-10-28T21:55:18.697Z",
   "timezone": "America/Los_Angeles",
   "source": {
     "tool": "ccusage",
@@ -16,12 +16,12 @@
     "totalTokens": 331306029
   },
   "totals": {
-    "inputTokens": 236256634,
-    "outputTokens": 38097060,
+    "inputTokens": 236375685,
+    "outputTokens": 38137406,
     "cacheCreationTokens": 490326945,
-    "cacheReadTokens": 35833069104,
-    "totalTokens": 36602144709,
-    "totalCost": 12629.16288899902
+    "cacheReadTokens": 35839041200,
+    "totalTokens": 36608276202,
+    "totalCost": 12630.40166059902
   },
   "agents": [
     {
@@ -54,12 +54,12 @@
     },
     {
       "id": "codex",
-      "inputTokens": 55534420,
-      "outputTokens": 8322968,
+      "inputTokens": 55653471,
+      "outputTokens": 8363314,
       "cacheCreationTokens": 0,
-      "cacheReadTokens": 2317307264,
-      "totalTokens": 2381164652,
-      "totalCost": 431.21129599999995,
+      "cacheReadTokens": 2323279360,
+      "totalTokens": 2387296145,
+      "totalCost": 432.45006759999995,
       "models": [
         "gpt-6-astra",
         "gpt-6-sol",
@@ -2882,21 +2882,21 @@
     },
     {
       "date": "2026-10-28",
-      "inputTokens": 638096,
-      "outputTokens": 136558,
+      "inputTokens": 757147,
+      "outputTokens": 176904,
       "cacheCreationTokens": 0,
-      "cacheReadTokens": 35814784,
-      "totalTokens": 36589438,
-      "totalCost": 6.2232503999999995,
+      "cacheReadTokens": 41786880,
+      "totalTokens": 42720931,
+      "totalCost": 7.462022,
       "agents": [
         {
           "id": "codex",
-          "inputTokens": 638096,
-          "outputTokens": 136558,
+          "inputTokens": 757147,
+          "outputTokens": 176904,
           "cacheCreationTokens": 0,
-          "cacheReadTokens": 35814784,
-          "totalTokens": 36589438,
-          "totalCost": 6.2232503999999995,
+          "cacheReadTokens": 41786880,
+          "totalTokens": 42720931,
+          "totalCost": 7.462022,
           "models": [
             "gpt-6.1-sol"
           ]
