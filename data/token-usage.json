@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T01:50:20.644Z",
+  "generatedAt": "2026-11-06T04:50:43.957Z",
   "timezone": "America/Los_Angeles",
   "source": {
     "tool": "ccusage",
@@ -16,12 +16,12 @@
     "totalTokens": 331306029
   },
   "totals": {
-    "inputTokens": 249978189,
-    "outputTokens": 40016391,
+    "inputTokens": 251220007,
+    "outputTokens": 40049430,
     "cacheCreationTokens": 490326945,
-    "cacheReadTokens": 36934963760,
-    "totalTokens": 37719680251,
-    "totalCost": 12785.988774599022
+    "cacheReadTokens": 36951551792,
+    "totalTokens": 37737543140,
+    "totalCost": 12790.461603799022
   },
   "agents": [
     {
@@ -54,12 +54,12 @@
     },
     {
       "id": "codex",
-      "inputTokens": 69255975,
-      "outputTokens": 10242299,
+      "inputTokens": 70497793,
+      "outputTokens": 10275338,
       "cacheCreationTokens": 0,
-      "cacheReadTokens": 3419201920,
-      "totalTokens": 3498700194,
-      "totalCost": 588.0371815999999,
+      "cacheReadTokens": 3435789952,
+      "totalTokens": 3516563083,
+      "totalCost": 592.5100107999999,
       "models": [
         "gpt-6-astra",
         "gpt-6-sol",
@@ -2744,21 +2744,21 @@
     },
     {
       "date": "2026-10-16",
-      "inputTokens": 484845,
-      "outputTokens": 56435,
+      "inputTokens": 640365,
+      "outputTokens": 56496,
       "cacheCreationTokens": 0,
-      "cacheReadTokens": 26116096,
-      "totalTokens": 26657376,
-      "totalCost": 4.1456496,
+      "cacheReadTokens": 26139136,
+      "totalTokens": 26835997,
+      "totalCost": 4.4596036,
       "agents": [
         {
           "id": "codex",
-          "inputTokens": 484845,
-          "outputTokens": 56435,
+          "inputTokens": 640365,
+          "outputTokens": 56496,
           "cacheCreationTokens": 0,
-          "cacheReadTokens": 26116096,
-          "totalTokens": 26657376,
-          "totalCost": 4.1456496,
+          "cacheReadTokens": 26139136,
+          "totalTokens": 26835997,
+          "totalCost": 4.4596036,
           "models": [
             "gpt-6.1-sol"
           ]
@@ -2974,21 +2974,21 @@
     },
     {
       "date": "2026-11-05",
-      "inputTokens": 15362025,
-      "outputTokens": 2018329,
+      "inputTokens": 16448323,
+      "outputTokens": 2051307,
       "cacheCreationTokens": 0,
-      "cacheReadTokens": 787022336,
-      "totalTokens": 804402690,
-      "totalCost": 129.6095736,
+      "cacheReadTokens": 803587328,
+      "totalTokens": 822086958,
+      "totalCost": 133.7684488,
       "agents": [
         {
           "id": "codex",
-          "inputTokens": 15362025,
-          "outputTokens": 2018329,
+          "inputTokens": 16448323,
+          "outputTokens": 2051307,
           "cacheCreationTokens": 0,
-          "cacheReadTokens": 787022336,
-          "totalTokens": 804402690,
-          "totalCost": 129.6095736,
+          "cacheReadTokens": 803587328,
+          "totalTokens": 822086958,
+          "totalCost": 133.7684488,
           "models": [
             "gpt-6.1-sol"
           ]
